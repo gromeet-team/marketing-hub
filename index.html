@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그로스팀 마케팅 툴</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0f0f0f;
+      color: #e0e0e0;
+      font-family: 'Noto Sans KR', sans-serif;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .card:hover {
+      background: #242424;
+      border-color: #3a3a3a;
+    }
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+    .card p {
+      font-size: 14px;
+      color: #999;
+      flex: 1;
+    }
+    .card a {
+      display: inline-block;
+      text-align: center;
+      padding: 10px 0;
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: background 0.2s ease;
+    }
+    .card a:hover {
+      background: #3b82f6;
+    }
+    @media (max-width: 400px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (min-width: 401px) and (max-width: 720px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>&#x1f527; 그로스팀 마케팅 툴</h1>
+  </header>
+  <div class="grid">
+    <div class="card">
+      <h2>키워드 헌터</h2>
+      <p>네이버 카페 자동 신고 실행/중지/로그</p>
+      <a href="https://keyword-hunter.vercel.app" target="_blank" rel="noopener">바로가기</a>
+    </div>
+    <div class="card">
+      <h2>쿠팡 좋아요 자동화</h2>
+      <p>쿠팡 상품 좋아요 자동화 대시보드</p>
+      <a href="https://coupang-likes-web.vercel.app" target="_blank" rel="noopener">바로가기</a>
+    </div>
+    <div class="card">
+      <h2>물길리뷰 대시보드</h2>
+      <p>물길리뷰 관리 대시보드</p>
+      <a href="https://gromeet.pythonanywhere.com/mulgil_rv_8xKq3nZ" target="_blank" rel="noopener">바로가기</a>
+    </div>
+  </div>
+</body>
+</html>
